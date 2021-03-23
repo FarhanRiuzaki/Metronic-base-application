@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
 class PermissionTableSeeder extends Seeder
 {
@@ -14,6 +15,7 @@ class PermissionTableSeeder extends Seeder
      */
     public function run()
     {
+        // default permissions
         $permissions = [
             'role.index',
             'role.create',
@@ -22,10 +24,29 @@ class PermissionTableSeeder extends Seeder
             'user.index',
             'user.create',
             'user.edit',
-            'user.delete'
+            'user.delete',
+            'permission.index',
+            'permission.create',
+            'permission.edit',
+            'permission.delete',
+            'product.index',
+            'product.create',
+            'product.edit',
+            'product.delete',
+            'api.uploadMedia'
             ];
-            foreach ($permissions as $permission) {
-                Permission::create(['name' => $permission]);
-            }
+        foreach ($permissions as $permission) {
+            Permission::create(['name' => $permission]);
+        }
+
+        // default role
+        $role = Role::create([
+            'id'    => 2,
+            'name'  => 'super-admin'
+        ]);
+
+        // sync permissions to role
+        $role->syncPermissions($permissions);
+
     }
 }
