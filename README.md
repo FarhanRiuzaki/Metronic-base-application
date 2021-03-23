@@ -35,12 +35,34 @@ npm install
 npm run dev
 ```
 
+After Compile template
+check in .env, find & change:
+
+```bash
+SEEDER_FIIRST=false to SEEDER_FIIRST=true 
+```
+
+Note: if you want to use default user and database configuration
+
+run this command for migrate default configuration database
+
+```bash
+php artisan migrate:fresh --seed
+```
+
 ```bash
 php artisan serve
 ```
 
 And navigate to generated server link (http://127.0.0.1:8000)
 
+```bash
+username: superadmin
+password: P@ssw0rd
+```
+
+Done! u can use my Base Application
+
 ### Copyright
 
-...
+Created By [Farhan Riuzaki](https://www.linkedin.com/in/farhanriuzaki/) Jakarta, 23 March 2021
