@@ -1,0 +1,432 @@
+
+/*
+Font families defined by this CSS:
+
+- "Inter"                  static "traditional" fonts for older web browsers
+- "Inter var"              single-axis variable fonts for all modern browsers
+- "Inter var experimental" multi-axis variable fonts for modern web browsers
+
+Use like this in your CSS:
+
+  :root { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: 'Inter var', sans-serif; }
+  }
+
+------------------------- static ------------------------- */
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("font-files/Inter-Thin.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-Thin.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url("font-files/Inter-ThinItalic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-ThinItalic.woff?v=3.15") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("font-files/Inter-ExtraLight.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-ExtraLight.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url("font-files/Inter-ExtraLightItalic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-ExtraLightItalic.woff?v=3.15") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("font-files/Inter-Light.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-Light.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url("font-files/Inter-LightItalic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-LightItalic.woff?v=3.15") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("font-files/Inter-Regular.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-Regular.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("font-files/Inter-Italic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-Italic.woff?v=3.15") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("font-files/Inter-Medium.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-Medium.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url("font-files/Inter-MediumItalic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-MediumItalic.woff?v=3.15") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("font-files/Inter-SemiBold.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-SemiBold.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("font-files/Inter-SemiBoldItalic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-SemiBoldItalic.woff?v=3.15") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("font-files/Inter-Bold.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-Bold.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("font-files/Inter-BoldItalic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-BoldItalic.woff?v=3.15") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("font-files/Inter-ExtraBold.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-ExtraBold.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url("font-files/Inter-ExtraBoldItalic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-ExtraBoldItalic.woff?v=3.15") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("font-files/Inter-Black.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-Black.woff?v=3.15") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url("font-files/Inter-BlackItalic.woff2?v=3.15") format("woff2"),
+         url("font-files/Inter-BlackItalic.woff?v=3.15") format("woff");
+  }
+
+
+  /* ----------------------- variable ----------------------- */
+  /* extra */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-italic.extra.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+E000,U+E002-E081,U+E093-E097,U+E0A5-E0E7,U+E0F3-E11D,U+E11E-E165,U+EE01,U+F6C3;
+    font-named-instance: 'Italic';
+  }
+  /* alternates */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-italic.alternates.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+E000,U+E002-E081,U+E093-E097,U+E0A5-E0E7,U+E0F3-E11D,U+E11E-E165,U+EE01,U+F6C3;
+    font-named-instance: 'Italic';
+  }
+  /* symbols */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-italic.symbols.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+20DD-20DF,U+2190-219A,U+21A9-21AB,U+21B0-21B2,U+21B3-21B6,U+21BA-21BC,U+21D0,U+21D2,U+21D4,U+21DE-21E0,U+21E4-21E6,U+21E7,U+21EA,U+2303,U+2305,U+2318,U+2325-2328,U+232B,U+2380,U+2387,U+238B,U+23CE-23D0,U+2460-2469,U+24B6-24D0,U+24EA,U+25A0-25A3,U+25B2-25B4,U+25B6-25B8,U+25BA-25BE,U+25C0-25C2,U+25C4-25C8,U+25CB,U+25CF,U+25EF,U+2600,U+2605-2607,U+263C,U+2661,U+2665,U+26A0,U+2713,U+2717,U+2756,U+2764,U+2780-2789,U+27F5-27FB,U+2B06,U+2B12-2B14,U+2B1C,U+E000,U+E12B-E164,U+1F130-1F14A,U+1F850,U+1F852;
+    font-named-instance: 'Italic';
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-italic.cyrillic.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0400-049E,U+04A0-0500,U+052F,U+20B4,U+2116,U+2DFF,U+A69F;
+    font-named-instance: 'Italic';
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-italic.greek.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0370-0378,U+037A-0380,U+0384-038B,U+038C,U+038E-03A2,U+03A3-03E2,U+03F0-0400,U+1F00-1F16,U+1F18-1F1E,U+1F20-1F46,U+1F48-1F4E,U+1F50-1F58,U+1F59,U+1F5B,U+1F5D,U+1F5F-1F7E,U+1F80-1FB5,U+1FB6-1FC5,U+1FC6-1FD4,U+1FD6-1FDC,U+1FDD-1FF0,U+1FF2-1FF5,U+1FF6-1FFF;
+    font-named-instance: 'Italic';
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-italic.vietnamese.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0102-0104,U+0110-0112,U+0128-012A,U+0168-016A,U+01A0-01A2,U+01AF-01B1,U+1EA0-1EFA,U+20AB;
+    font-named-instance: 'Italic';
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-italic.latin-ext.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0100-0149,U+014A-01C4,U+01C5-0250,U+0259,U+1E00-1F00,U+2020,U+20A0-20AC,U+20AD-20C0,U+2113,U+2C7C,U+2C7F,U+A7FF;
+    font-named-instance: 'Italic';
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-italic.latin.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0000-007F,U+00A0-0100,U+0131,U+0152-0154,U+02BB-02BD,U+02C6,U+02DA,U+02DC,U+2000-200C,U+2010-2028,U+202F-2060,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+FEFF;
+    font-named-instance: 'Italic';
+  }
+  /* extra */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-roman.extra.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+E000,U+E002-E081,U+E093-E097,U+E0A5-E0E7,U+E0F3-E11D,U+E11E-E165,U+EE01,U+F6C3;
+    font-named-instance: 'Regular';
+  }
+  /* alternates */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-roman.alternates.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+E000,U+E002-E081,U+E093-E097,U+E0A5-E0E7,U+E0F3-E11D,U+E11E-E165,U+EE01,U+F6C3;
+    font-named-instance: 'Regular';
+  }
+  /* symbols */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-roman.symbols.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+20DD-20DF,U+2190-219A,U+21A9-21AB,U+21B0-21B2,U+21B3-21B6,U+21BA-21BC,U+21D0,U+21D2,U+21D4,U+21DE-21E0,U+21E4-21E6,U+21E7,U+21EA,U+2303,U+2305,U+2318,U+2325-2328,U+232B,U+2380,U+2387,U+238B,U+23CE-23D0,U+2460-2469,U+24B6-24D0,U+24EA,U+25A0-25A3,U+25B2-25B4,U+25B6-25B8,U+25BA-25BE,U+25C0-25C2,U+25C4-25C8,U+25CB,U+25CF,U+25EF,U+2600,U+2605-2607,U+263C,U+2661,U+2665,U+26A0,U+2713,U+2717,U+2756,U+2764,U+2780-2789,U+27F5-27FB,U+2B06,U+2B12-2B14,U+2B1C,U+E000,U+E12B-E164,U+1F130-1F14A,U+1F850,U+1F852;
+    font-named-instance: 'Regular';
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-roman.cyrillic.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0400-049E,U+04A0-0500,U+052F,U+20B4,U+2116,U+2DFF,U+A69F;
+    font-named-instance: 'Regular';
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-roman.greek.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0370-0378,U+037A-0380,U+0384-038B,U+038C,U+038E-03A2,U+03A3-03E2,U+03F0-0400,U+1F00-1F16,U+1F18-1F1E,U+1F20-1F46,U+1F48-1F4E,U+1F50-1F58,U+1F59,U+1F5B,U+1F5D,U+1F5F-1F7E,U+1F80-1FB5,U+1FB6-1FC5,U+1FC6-1FD4,U+1FD6-1FDC,U+1FDD-1FF0,U+1FF2-1FF5,U+1FF6-1FFF;
+    font-named-instance: 'Regular';
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-roman.vietnamese.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0102-0104,U+0110-0112,U+0128-012A,U+0168-016A,U+01A0-01A2,U+01AF-01B1,U+1EA0-1EFA,U+20AB;
+    font-named-instance: 'Regular';
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-roman.latin-ext.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0100-0149,U+014A-01C4,U+01C5-0250,U+0259,U+1E00-1F00,U+2020,U+20A0-20AC,U+20AD-20C0,U+2113,U+2C7C,U+2C7F,U+A7FF;
+    font-named-instance: 'Regular';
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter-roman.latin.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0000-007F,U+00A0-0100,U+0131,U+0152-0154,U+02BB-02BD,U+02C6,U+02DA,U+02DC,U+2000-200C,U+2010-2028,U+202F-2060,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+FEFF;
+    font-named-instance: 'Regular';
+  }
+
+  /* ----------- experimental multi-axis variable -----------
+
+  Slant axis is not yet widely supported (as of February 2019) and thus this
+  multi-axis single-file variable font is opt-in rather than the default.
+  When using this, you will likely need to set font-variation-settings explicitly, e.g:
+    * { font-variation-settings: "slnt" 0deg }
+    .italic { font-variation-settings: "slnt" 10deg }
+  */
+  /* extra */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter.extra.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+E000,U+E002-E081,U+E093-E097,U+E0A5-E0E7,U+E0F3-E11D,U+E11E-E165,U+EE01,U+F6C3;
+  }
+  /* alternates */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter.alternates.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+E000,U+E002-E081,U+E093-E097,U+E0A5-E0E7,U+E0F3-E11D,U+E11E-E165,U+EE01,U+F6C3;
+  }
+  /* symbols */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter.symbols.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+20DD-20DF,U+2190-219A,U+21A9-21AB,U+21B0-21B2,U+21B3-21B6,U+21BA-21BC,U+21D0,U+21D2,U+21D4,U+21DE-21E0,U+21E4-21E6,U+21E7,U+21EA,U+2303,U+2305,U+2318,U+2325-2328,U+232B,U+2380,U+2387,U+238B,U+23CE-23D0,U+2460-2469,U+24B6-24D0,U+24EA,U+25A0-25A3,U+25B2-25B4,U+25B6-25B8,U+25BA-25BE,U+25C0-25C2,U+25C4-25C8,U+25CB,U+25CF,U+25EF,U+2600,U+2605-2607,U+263C,U+2661,U+2665,U+26A0,U+2713,U+2717,U+2756,U+2764,U+2780-2789,U+27F5-27FB,U+2B06,U+2B12-2B14,U+2B1C,U+E000,U+E12B-E164,U+1F130-1F14A,U+1F850,U+1F852;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter.cyrillic.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0400-049E,U+04A0-0500,U+052F,U+20B4,U+2116,U+2DFF,U+A69F;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter.greek.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0370-0378,U+037A-0380,U+0384-038B,U+038C,U+038E-03A2,U+03A3-03E2,U+03F0-0400,U+1F00-1F16,U+1F18-1F1E,U+1F20-1F46,U+1F48-1F4E,U+1F50-1F58,U+1F59,U+1F5B,U+1F5D,U+1F5F-1F7E,U+1F80-1FB5,U+1FB6-1FC5,U+1FC6-1FD4,U+1FD6-1FDC,U+1FDD-1FF0,U+1FF2-1FF5,U+1FF6-1FFF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter.vietnamese.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0102-0104,U+0110-0112,U+0128-012A,U+0168-016A,U+01A0-01A2,U+01AF-01B1,U+1EA0-1EFA,U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter.latin-ext.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0100-0149,U+014A-01C4,U+01C5-0250,U+0259,U+1E00-1F00,U+2020,U+20A0-20AC,U+20AD-20C0,U+2113,U+2C7C,U+2C7F,U+A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('font-files/Inter.latin.var.woff2?v=3.15') format('woff2');
+    unicode-range: U+0000-007F,U+00A0-0100,U+0131,U+0152-0154,U+02BB-02BD,U+02C6,U+02DA,U+02DC,U+2000-200C,U+2010-2028,U+202F-2060,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+FEFF;
+  }
+
+  /* Legacy name (became legacy on Feb 2, 2019) */
+  @font-face {
+    font-family: 'Inter var alt';
+    font-weight: 100 900;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    font-display: swap;
+    src: url("font-files/Inter-roman.var.woff2?v=3.15") format("woff2");
+  }
+  @font-face {
+    font-family: 'Inter var alt';
+    font-weight: 100 900;
+    font-style: italic;
+    font-named-instance: 'Italic';
+    font-display: swap;
+    src: url("font-files/Inter-italic.var.woff2?v=3.15") format("woff2");
+  }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #d2d6dc}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#a0aec0}input::-moz-placeholder,textarea::-moz-placeholder{color:#a0aec0}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#a0aec0}input::-ms-input-placeholder,textarea::-ms-input-placeholder{color:#a0aec0}input::placeholder,textarea::placeholder{color:#a0aec0}[role=button],button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}.form-input{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:#fff;border-color:#d2d6dc;border-width:1px;border-radius:.375rem;padding:.5rem .75rem;font-size:1rem;line-height:1.5}.form-input::-webkit-input-placeholder{color:#9fa6b2;opacity:1}.form-input::-moz-placeholder{color:#9fa6b2;opacity:1}.form-input:-ms-input-placeholder{color:#9fa6b2;opacity:1}.form-input::-ms-input-placeholder{color:#9fa6b2;opacity:1}.form-input::placeholder{color:#9fa6b2;opacity:1}.form-input:focus{outline:none;box-shadow:0 0 0 3px rgba(164,202,254,.45);border-color:#a4cafe}.form-textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:#fff;border-color:#d2d6dc;border-width:1px;border-radius:.375rem;padding:.5rem .75rem;font-size:1rem;line-height:1.5}.form-textarea::-webkit-input-placeholder{color:#9fa6b2;opacity:1}.form-textarea::-moz-placeholder{color:#9fa6b2;opacity:1}.form-textarea:-ms-input-placeholder{color:#9fa6b2;opacity:1}.form-textarea::-ms-input-placeholder{color:#9fa6b2;opacity:1}.form-textarea::placeholder{color:#9fa6b2;opacity:1}.form-textarea:focus{outline:none;box-shadow:0 0 0 3px rgba(164,202,254,.45);border-color:#a4cafe}.form-multiselect{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:#fff;border-color:#d2d6dc;border-width:1px;border-radius:.375rem;padding:.5rem .75rem;font-size:1rem;line-height:1.5}.form-multiselect:focus{outline:none;box-shadow:0 0 0 3px rgba(164,202,254,.45);border-color:#a4cafe}.form-select{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M7 7l3-3 3 3m0 6l-3 3-3-3' stroke='%239fa6b2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-print-color-adjust:exact;color-adjust:exact;background-repeat:no-repeat;background-color:#fff;border-color:#d2d6dc;border-width:1px;border-radius:.375rem;padding:.5rem 2.5rem .5rem .75rem;font-size:1rem;line-height:1.5;background-position:right .5rem center;background-size:1.5em 1.5em}.form-select::-ms-expand{color:#9fa6b2;border:none}@media not print{.form-select::-ms-expand{display:none}}@media print and (-ms-high-contrast:active),print and (-ms-high-contrast:none){.form-select{padding-right:.75rem}}.form-select:focus{outline:none;box-shadow:0 0 0 3px rgba(164,202,254,.45);border-color:#a4cafe}.form-checkbox{-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-print-color-adjust:exact;color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#3f83f8;background-color:#fff;border-color:#d2d6dc;border-width:1px;border-radius:.25rem}.form-checkbox:checked{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414L7 8.586 5.707 7.293z'/%3E%3C/svg%3E");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:50%;background-repeat:no-repeat}@media not print{.form-checkbox::-ms-check{border-width:1px;color:transparent;background:inherit;border-color:inherit;border-radius:inherit}}.form-checkbox:focus{outline:none;box-shadow:0 0 0 3px rgba(164,202,254,.45);border-color:#a4cafe}.form-checkbox:checked:focus{border-color:transparent}.form-radio{-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-print-color-adjust:exact;color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;flex-shrink:0;border-radius:100%;height:1rem;width:1rem;color:#3f83f8;background-color:#fff;border-color:#d2d6dc;border-width:1px}.form-radio:checked{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='3'/%3E%3C/svg%3E");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:50%;background-repeat:no-repeat}@media not print{.form-radio::-ms-check{border-width:1px;color:transparent;background:inherit;border-color:inherit;border-radius:inherit}}.form-radio:focus{outline:none;box-shadow:0 0 0 3px rgba(164,202,254,.45);border-color:#a4cafe}.form-radio:checked:focus{border-color:transparent}.space-x-2>:not(template)~:not(template){--space-x-reverse:0;margin-right:calc(0.5rem*var(--space-x-reverse));margin-left:calc(0.5rem*(1 - var(--space-x-reverse)))}.space-y-3>:not(template)~:not(template){--space-y-reverse:0;margin-top:calc(0.75rem*(1 - var(--space-y-reverse)));margin-bottom:calc(0.75rem*var(--space-y-reverse))}.space-y-4>:not(template)~:not(template){--space-y-reverse:0;margin-top:calc(1rem*(1 - var(--space-y-reverse)));margin-bottom:calc(1rem*var(--space-y-reverse))}.space-y-5>:not(template)~:not(template){--space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--space-y-reverse)));margin-bottom:calc(1.25rem*var(--space-y-reverse))}.space-x-6>:not(template)~:not(template){--space-x-reverse:0;margin-right:calc(1.5rem*var(--space-x-reverse));margin-left:calc(1.5rem*(1 - var(--space-x-reverse)))}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-50{--bg-opacity:1;background-color:#f9fafb;background-color:rgba(249,250,251,var(--bg-opacity))}.bg-gray-800{--bg-opacity:1;background-color:#252f3f;background-color:rgba(37,47,63,var(--bg-opacity))}.bg-gray-900{--bg-opacity:1;background-color:#161e2e;background-color:rgba(22,30,46,var(--bg-opacity))}.bg-cool-gray-100{--bg-opacity:1;background-color:#f1f5f9;background-color:rgba(241,245,249,var(--bg-opacity))}.bg-red-100{--bg-opacity:1;background-color:#fde8e8;background-color:rgba(253,232,232,var(--bg-opacity))}.bg-red-500{--bg-opacity:1;background-color:#f05252;background-color:rgba(240,82,82,var(--bg-opacity))}.bg-red-600{--bg-opacity:1;background-color:#e02424;background-color:rgba(224,36,36,var(--bg-opacity))}.bg-orange-400{--bg-opacity:1;background-color:#ff8a4c;background-color:rgba(255,138,76,var(--bg-opacity))}.bg-yellow-400{--bg-opacity:1;background-color:#e3a008;background-color:rgba(227,160,8,var(--bg-opacity))}.bg-green-500{--bg-opacity:1;background-color:#0e9f6e;background-color:rgba(14,159,110,var(--bg-opacity))}.bg-green-600{--bg-opacity:1;background-color:#057a55;background-color:rgba(5,122,85,var(--bg-opacity))}.bg-blue-600{--bg-opacity:1;background-color:#1c64f2;background-color:rgba(28,100,242,var(--bg-opacity))}.bg-pink-100{--bg-opacity:1;background-color:#fce8f3;background-color:rgba(252,232,243,var(--bg-opacity))}.bg-pink-600{--bg-opacity:1;background-color:#d61f69;background-color:rgba(214,31,105,var(--bg-opacity))}.hover\:bg-pink-500:hover{--bg-opacity:1;background-color:#e74694;background-color:rgba(231,70,148,var(--bg-opacity))}.bg-gradient-to-r{background-image:linear-gradient(90deg,var(--gradient-color-stops))}.from-red-600{--gradient-from-color:#e02424;--gradient-color-stops:var(--gradient-from-color),var(--gradient-to-color,rgba(224,36,36,0))}.from-orange-500{--gradient-from-color:#ff5a1f;--gradient-color-stops:var(--gradient-from-color),var(--gradient-to-color,rgba(255,90,31,0))}.from-green-600{--gradient-from-color:#057a55;--gradient-color-stops:var(--gradient-from-color),var(--gradient-to-color,rgba(5,122,85,0))}.from-teal-500{--gradient-from-color:#0694a2;--gradient-color-stops:var(--gradient-from-color),var(--gradient-to-color,rgba(6,148,162,0))}.via-red-500{--gradient-via-color:#f05252;--gradient-color-stops:var(--gradient-from-color),var(--gradient-via-color),var(--gradient-to-color,rgba(240,82,82,0))}.via-green-500{--gradient-via-color:#0e9f6e;--gradient-color-stops:var(--gradient-from-color),var(--gradient-via-color),var(--gradient-to-color,rgba(14,159,110,0))}.to-red-800{--gradient-to-color:#9b1c1c}.to-green-800{--gradient-to-color:#03543f}.border-transparent{border-color:transparent}.border-gray-200{--border-opacity:1;border-color:#e5e7eb;border-color:rgba(229,231,235,var(--border-opacity))}.border-red-600{--border-opacity:1;border-color:#e02424;border-color:rgba(224,36,36,var(--border-opacity))}.border-yellow-400{--border-opacity:1;border-color:#e3a008;border-color:rgba(227,160,8,var(--border-opacity))}.border-green-600{--border-opacity:1;border-color:#057a55;border-color:rgba(5,122,85,var(--border-opacity))}.border-blue-600{--border-opacity:1;border-color:#1c64f2;border-color:rgba(28,100,242,var(--border-opacity))}.rounded{border-radius:.25rem}.rounded-md{border-radius:.375rem}.rounded-lg{border-radius:.5rem}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-t-4{border-top-width:4px}.border-l-4{border-left-width:4px}.border-b{border-bottom-width:1px}.cursor-pointer{cursor:pointer}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.hidden{display:none}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.font-body{font-family:Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-extrabold{font-weight:800}.h-2{height:.5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-40{height:10rem}.h-48{height:12rem}.h-screen{height:100vh}.text-sm{font-size:.875rem}.text-base{font-size:1rem}.text-lg{font-size:1.125rem}.text-xl{font-size:1.25rem}.text-2xl{font-size:1.5rem}.text-3xl{font-size:1.875rem}.text-4xl{font-size:2.25rem}.leading-5{line-height:1.25rem}.leading-6{line-height:1.5rem}.leading-7{line-height:1.75rem}.leading-8{line-height:2rem}.leading-10{line-height:2.5rem}.mx-auto{margin-left:auto;margin-right:auto}.-mx-4{margin-left:-1rem;margin-right:-1rem}.mt-1{margin-top:.25rem}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.ml-2{margin-left:.5rem}.mt-3{margin-top:.75rem}.ml-3{margin-left:.75rem}.mt-4{margin-top:1rem}.mb-4{margin-bottom:1rem}.ml-4{margin-left:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.ml-6{margin-left:1.5rem}.mt-8{margin-top:2rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-16{margin-top:4rem}.mt-32{margin-top:8rem}.mr-1\.5{margin-right:.375rem}.-ml-0\.5{margin-left:-.125rem}.max-w-sm{max-width:24rem}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.max-w-2xl{max-width:42rem}.max-w-screen-xl{max-width:1280px}.opacity-0{opacity:0}.opacity-75{opacity:.75}.opacity-100{opacity:1}.focus\:outline-none:focus{outline:0}.overflow-hidden{overflow:hidden}.p-1{padding:.25rem}.p-2{padding:.5rem}.p-4{padding:1rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{top:0;right:0;bottom:0;left:0}.top-0{top:0}.left-1\/2{left:50%}.right-full{right:100%}.left-full{left:100%}.shadow-xs{box-shadow:0 0 0 1px rgba(0,0,0,.05)}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)}.focus\:shadow-outline-red:focus{box-shadow:0 0 0 3px rgba(248,180,180,.45)}.text-right{text-align:right}.text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.text-gray-50{--text-opacity:1;color:#f9fafb;color:rgba(249,250,251,var(--text-opacity))}.text-gray-100{--text-opacity:1;color:#f4f5f7;color:rgba(244,245,247,var(--text-opacity))}.text-gray-200{--text-opacity:1;color:#e5e7eb;color:rgba(229,231,235,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#d2d6dc;color:rgba(210,214,220,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#9fa6b2;color:rgba(159,166,178,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#4b5563;color:rgba(75,85,99,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#374151;color:rgba(55,65,81,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#161e2e;color:rgba(22,30,46,var(--text-opacity))}.text-red-600{--text-opacity:1;color:#e02424;color:rgba(224,36,36,var(--text-opacity))}.text-red-800{--text-opacity:1;color:#9b1c1c;color:rgba(155,28,28,var(--text-opacity))}.text-yellow-400{--text-opacity:1;color:#e3a008;color:rgba(227,160,8,var(--text-opacity))}.text-green-600{--text-opacity:1;color:#057a55;color:rgba(5,122,85,var(--text-opacity))}.text-blue-600{--text-opacity:1;color:#1c64f2;color:rgba(28,100,242,var(--text-opacity))}.text-pink-400{--text-opacity:1;color:#f17eb8;color:rgba(241,126,184,var(--text-opacity))}.text-pink-500{--text-opacity:1;color:#e74694;color:rgba(231,70,148,var(--text-opacity))}.text-pink-600{--text-opacity:1;color:#d61f69;color:rgba(214,31,105,var(--text-opacity))}.text-pink-800{--text-opacity:1;color:#99154b;color:rgba(153,21,75,var(--text-opacity))}.hover\:text-gray-600:hover{--text-opacity:1;color:#4b5563;color:rgba(75,85,99,var(--text-opacity))}.focus\:text-gray-50:focus{--text-opacity:1;color:#f9fafb;color:rgba(249,250,251,var(--text-opacity))}.focus\:text-gray-500:focus{--text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--text-opacity))}.capitalize{text-transform:capitalize}.tracking-tight{letter-spacing:-.025em}.w-0{width:0}.w-2{width:.5rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-auto{width:auto}.w-full{width:100%}.z-10{z-index:1000}.transform{--transform-translate-x:0;--transform-translate-y:0;--transform-rotate:0;--transform-skew-x:0;--transform-skew-y:0;--transform-scale-x:1;--transform-scale-y:1;transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))}.origin-top{transform-origin:top}.scale-75{--transform-scale-x:.75;--transform-scale-y:.75}.translate-x-1\/2{--transform-translate-x:50%}.-translate-x-1\/2{--transform-translate-x:-50%}.translate-y-0{--transform-translate-y:0}.translate-y-2{--transform-translate-y:0.5rem}.translate-y-12{--transform-translate-y:3rem}.translate-y-16{--transform-translate-y:4rem}.-translate-y-8{--transform-translate-y:-2rem}.-translate-y-10{--transform-translate-y:-2.5rem}.transition{transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-100{transition-duration:.1s}.duration-150{transition-duration:.15s}.duration-300{transition-duration:.3s}@-webkit-keyframes spin{to{transform:rotate(1turn)}}@keyframes spin{to{transform:rotate(1turn)}}@-webkit-keyframes ping{75%,to{transform:scale(2);opacity:0}}@keyframes ping{75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}.animate-bounce{-webkit-animation:bounce 1s infinite;animation:bounce 1s infinite}@media (min-width:640px){.sm\:container{width:100%;max-width:640px}@media (min-width:768px){.sm\:container{max-width:768px}}@media (min-width:1024px){.sm\:container{max-width:1024px}}@media (min-width:1280px){.sm\:container{max-width:1280px}}.sm\:flex{display:flex}.sm\:items-start{align-items:flex-start}.sm\:justify-end{justify-content:flex-end}.sm\:justify-center{justify-content:center}.sm\:text-xl{font-size:1.25rem}.sm\:text-3xl{font-size:1.875rem}.sm\:text-4xl{font-size:2.25rem}.sm\:text-6xl{font-size:4rem}.sm\:leading-9{line-height:2.25rem}.sm\:leading-10{line-height:2.5rem}.sm\:leading-none{line-height:1}.sm\:mx-auto{margin-left:auto;margin-right:auto}.sm\:mt-5{margin-top:1.25rem}.sm\:mt-8{margin-top:2rem}.sm\:max-w-lg{max-width:32rem}.sm\:p-6{padding:1.5rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-12{padding-top:3rem;padding-bottom:3rem}.sm\:text-center{text-align:center}.sm\:scale-100{--transform-scale-x:1;--transform-scale-y:1}.sm\:translate-x-0{--transform-translate-x:0}.sm\:translate-x-2{--transform-translate-x:0.5rem}.sm\:translate-y-0{--transform-translate-y:0}}@media (min-width:768px){.md\:container{width:100%}@media (min-width:640px){.md\:container{max-width:640px}}@media (min-width:768px){.md\:container{max-width:768px}}@media (min-width:1024px){.md\:container{max-width:1024px}}@media (min-width:1280px){.md\:container{max-width:1280px}}.md\:space-y-0>:not(template)~:not(template){--space-y-reverse:0;margin-top:calc(0px*(1 - var(--space-y-reverse)));margin-bottom:calc(0px*var(--space-y-reverse))}.md\:grid{display:grid}.md\:text-lg{font-size:1.125rem}.md\:mx-auto{margin-left:auto;margin-right:auto}.md\:mt-0{margin-top:0}.md\:max-w-2xl{max-width:42rem}.md\:py-4{padding-top:1rem;padding-bottom:1rem}.md\:px-10{padding-left:2.5rem;padding-right:2.5rem}.md\:py-20{padding-top:5rem;padding-bottom:5rem}.md\:col-gap-8{grid-column-gap:2rem;-moz-column-gap:2rem;column-gap:2rem}.md\:row-gap-10{grid-row-gap:2.5rem;row-gap:2.5rem}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (min-width:1024px){.lg\:container{width:100%}@media (min-width:640px){.lg\:container{max-width:640px}}@media (min-width:768px){.lg\:container{max-width:768px}}@media (min-width:1024px){.lg\:container{max-width:1024px}}@media (min-width:1280px){.lg\:container{max-width:1280px}}.lg\:block{display:block}.lg\:flex{display:flex}.lg\:grid{display:grid}.lg\:hidden{display:none}.lg\:items-start{align-items:flex-start}.lg\:items-center{align-items:center}.lg\:justify-start{justify-content:flex-start}.lg\:text-lg{font-size:1.125rem}.lg\:text-5xl{font-size:3rem}.lg\:mx-0{margin-left:0;margin-right:0}.lg\:mx-auto{margin-left:auto;margin-right:auto}.lg\:mt-0{margin-top:0}.lg\:max-w-none{max-width:none}.lg\:max-w-md{max-width:28rem}.lg\:max-w-screen-xl{max-width:1280px}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-24{padding-top:6rem;padding-bottom:6rem}.lg\:text-left{text-align:left}.lg\:text-center{text-align:center}.lg\:gap-8{grid-gap:2rem;gap:2rem}.lg\:gap-12{grid-gap:3rem;gap:3rem}.lg\:grid-flow-row-dense{grid-auto-flow:row dense}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:col-span-6{grid-column:span 6/span 6}.lg\:col-start-1{grid-column-start:1}.lg\:col-start-2{grid-column-start:2}}@media (min-width:1280px){.xl\:container{width:100%}@media (min-width:640px){.xl\:container{max-width:640px}}@media (min-width:768px){.xl\:container{max-width:768px}}@media (min-width:1024px){.xl\:container{max-width:1024px}}@media (min-width:1280px){.xl\:container{max-width:1280px}}.xl\:text-xl{font-size:1.25rem}.xl\:text-6xl{font-size:4rem}.xl\:py-24{padding-top:6rem;padding-bottom:6rem}}

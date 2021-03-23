@@ -1,0 +1,138 @@
+laravel invoice "untuk membuat TAX"     >> https://github.com/sandervanhooft/laravel-invoicable
+Membuat templating EMAIL                >> https://github.com/Snowfire/Beautymail
+BOT Telegram                            >> https://laravel-notification-channels.com/telegram/#installation
+sentry / bug reporting                  >> https://sentry.io/settings/pt-bank-mega/
+sentry / bug reporting   DOC            >> https://docs.sentry.io/platforms/php/guides/laravel/?_ga=2.3676018.375465038.1608694219-459220168.1608694219
+LARAVEL JETSTRIM                        >> https://jetstream.laravel.com/1.x/introduction.html
+
+
+Laravel ACL
+    - Laravel Hey Man                   >> https://github.com/imanghafoori1/laravel-heyman?ref=madewithlaravel.com
+    - SO 1                              >> https://stackoverflow.com/questions/46772531/laravel-acl-with-entrust-how-to-protect-routes-controller-methods
+    - Laravel Auth                      >> https://laravel.com/docs/8.x/authorization
+    - SO 2                              >> https://geekytomato.com/user-roles-access-control-acl-laravel/
+    - Laravel Permission                >> https://spatie.be/docs/laravel-permission/v3/basic-usage/basic-usage
+    - kawan koding                      >> https://www.kawankoding.id/belajar-laravel-roles-permission/
+    - Auth                              >> https://laracasts.com/discuss/channels/laravel/set-permission-for-different-methods-in-controller-when-using-spatiepermission
+    - stack                             >> https://stackoverflow.com/questions/47821342/role-based-permission-to-laravel
+    -- Laracust                         >> https://laratrust.santigarcor.me/docs/6.x/
+    + spatite                   >> https://www.qcode.in/easy-roles-and-permissions-in-laravel-5-4/
+        Cascading               >> https://github.com/spatie/laravel-permission/blob/d58615ac37e822221d1c2dd269a6ef868d3248f9/src/Middlewares/CascadePermissionMiddleware.php
+        Example:
+            * Do a cascading permissions check by recreating the permission namespace tier-by-tier.
+            *
+            * example:
+            * admin.auth.users.modify.create
+            *
+            * checks this permissions in this order and exits successfully if found
+            * admin.auth
+            * admin.users
+            * admin.modify
+            * admin.create
+        goto: C:\NEW LARAVEL\Project\dev_metronic_scratchapp_spatie\vendor\spatie\laravel-permission\src\Middlewares\PermissionMiddleware.php
+
+Loging Activity
+    + LAravel Audit                     >> http://www.laravel-auditing.com/docs/9.0/introduction
+    - Log                               >> https://pusher.com/tutorials/live-logs-dashboard-laravel
+    - Flare                             >> https://flareapp.io/?ref=madewithlaravel.com
+
+Package
+    - Chartisan                         >> https://chartisan.dev/documentation/data
+                                        >> https://charts.erik.cat/guide/create_charts.html#create-the-chartisan-instance
+    + Laravel Debugbar                  >> https://github.com/barryvdh/laravel-debugbar
+    + user log                          >> https://github.com/yadahan/laravel-authentication-log
+    + Laravel Datatable                 >> https://github.com/yajra/laravel-datatables
+    + Maatweb Excel                     >> https://docs.laravel-excel.com/3.1/getting-started/
+    - Socialite                         >> https://laravel.com/docs/8.x/socialite
+    +sweet-alert                        >> https://realrashid.github.io/sweet-alert/usage?id=usage
+    +toaster                            >> https://devdojo.com/devdojo/toastr-notifications-in-your-laravel-app
+    +helper.php
+    +RecordSignature
+    +LaraBug                            >> https://www.larabug.com/panel/projects
+                                        >> https://www.larabug.com/
+    +Laravel Bug Exception              >> https://github.com/tylercd100/lern
+    - Incident Logs                     >> https://medium.com/@SlyFireFox/laravel-how-to-make-incident-logs-d7fa88e48490
+    - Tracker Lara (Full geo & visit )  >> https://raw.githubusercontent.com/antonioribeiro/tracker/master/src/views/screenshots/visits.png
+    + Redis                             >> https://kodingin.com/cara-menggunakan-cache-dengan-redis-di-laravel/
+    - model caching                     >> https://github.com/GeneaLabs/laravel-model-caching
+    - Laravel Visits                    >> https://github.com/awssat/laravel-visits
+                                        >> https://awssat.com/opensource/laravel-visits/
+                                        >> https://stackoverflow.com/questions/29694372/laravel-visitors-counter
+    - Laravel sent emails               >> https://github.com/antonioribeiro/tracker
+                                        >> https://github.com/dcblogdev/laravel-sent-emails?ref=madewithlaravel.com
+                                        >> https://www.youtube.com/watch?v=Oj_OF5n4l4k&feature=youtu.be
+    - password history                  >> https://github.com/infinitypaul/laravel-password-history-validation?ref=madewithlaravel.com
+    + Laravel Notify                    >> https://github.com/mckenziearts/laravel-notify
+    -+ Telegram BOT                     >> https://telegram-bot-sdk.readme.io/docs?ref=madewithlaravel.com
+    -+ API L0gger                       >> https://github.com/aungwinthant/apilogger?ref=madewithlaravel.com
+    + Laravel form HTML                 >> https://laravelcollective.com/docs/6.x/html
+    + Jquery Validate                   >> https://jqueryvalidation.org/
+                                        >> https://jqueryvalidation.org/documentation/
+    + Encrypt AES 128 CBC               >> https://gist.github.com/joashp/a1ae9cb30fa533f4ad94
+    + Comand make:views                 >> https://github.com/svenluijten/artisan-view
+                                        >> https://github.com/laravel/ideas/issues/241
+        Example:
+            versi lengkap command:
+                php artisan make:view *** --resource --extends="layout.default" --section="page_toolbar" --section="content"
+            *** change to "master.roles.create"
+            # Create a view 'crate.blade.php' in a subdirectory ('master/roles')
+        Auto Permission
+            agar bisa membuat permission secara otomatis bisa dengan:
+            1. --resources  : akan otomatis membuat `name`.index , `name`.create, `name`.edit, `name`.delete
+                Example:
+                    php artisan make:view master.product  --resource
+                Output:
+                    - product.index
+                    - product.create
+                    - product.edit
+                    - product.delete
+            2. normal       : hanya akan membaca jika .index, .create, .edit
+                Example:
+                    php artisan make:view master.product.index
+                Output:
+                    - product.index
+
+                Example:
+                    php artisan make:view product.create
+                Output:
+                    - product.create
+            Lokasi file modified: C:\NEW LARAVEL\Project\dev_metronic_scratchapp_spatie\vendor\sven\artisan-view\src\Config.php
+            function : setResource
+
+    + Tinker / Factory For dummy data   >> https://laracasts.com/discuss/channels/code-review/please-help-call-to-undefined-function-factory
+                                        >> https://laravel.com/docs/8.x/database-testing#generating-factories
+        Example:
+            code ready step:
+                - php artisan tinker
+                - product::factory()->count(10000)->create();
+
+            To create a factory, execute the make:factory Artisan command:
+
+            php artisan make:factory PostFactory
+            The new factory class will be placed in your database/factories directory.
+
+            The --model option may be used to indicate the name of the model created by the factory. This option will pre-fill the generated factory file with the given model:
+
+            php artisan make:factory PostFactory --model=Post
+        goto: C:\NEW LARAVEL\Project\dev_metronic_scratchapp_spatie\database\factories\ProductFactory.php
+    + Yajra Datatable Doc               >> https://yajrabox.com/docs/laravel-datatables/master/raw-columns
+    + Login Device                      >> https://codezen.io/how-to-manage-logged-in-devices-in-laravel/
+    + Encrypt Decrypt otomatis Model    >> https://dev.to/tommyhendrawan/automatic-laravel-data-encryption-with-eloquent-4137
+    + Mailtrap untuk emailing test      >> https://mailtrap.io/
+        tutorial mailtrap               >> https://www.malasngoding.com/kirim-email-dengan-laravel/
+    + Laravel Media Library Spatie      >> https://spatie.be/docs/laravel-medialibrary/v9/
+
+
+    GETTING HARDER GUYS
+    - Websocket Laravel                 >> https://beyondco.de/docs/laravel-websockets/basic-usage/ssl
+                                        >> https://www.itsolutionstuff.com/post/laravel-52-chat-message-module-using-socketio-redis-express-and-nodejs-from-from-scratchexample.html
+    +++                                 >> https://medium.com/@errohitdhiman/real-time-one-to-one-and-group-chat-with-php-laravel-ratchet-websocket-library-javascript-and-c64ba20621ed
+    ++                                    >> https://freek.dev/1228-introducing-laravel-websockets-an-easy-to-use-websocket-server-implemented-in-php
+    ++                                    >> https://christoph-rumpel.com/2020/11/laravel-real-time-notifications
+    ++                                    >>https://medium.com/@zachvv11/real-time-chat-room-with-larasocket-tailwind-alpine-livewire-and-laravel-406a8c5e680d
+                                        >> https://medium.com/@zachvv11/building-a-real-time-chat-application-with-laravel-and-larasocket-c3e377537dc2
+CONFIG HELPER       >> https://ilmucoding.com/laravel-7-custom-helper/
+
+RESTFUL API >> For next implementaion
+    +- Swagger + Pasport (doc API & Auth Token API)     >> https://dev.to/avsecdongol/laravel-api-documentation-with-swagger-and-passport-3ec0
+                                                        >> https://github.com/DarkaOnLine/L5-Swagger
