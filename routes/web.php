@@ -46,7 +46,7 @@ Route::get('api/dt-user'    ,'ApiController@DTUser')->name('apis.DTUser');
 
 // Custom Route [GET, POST, PATCH] taro disini
 Route::get('permissions/datatable','PermissionController@datatable')->name('permissions.datatable');
-Route::get('users/{id}','UserController@updateStatus')->name('users.updateStatus'); //update status user
+Route::get('users/update-status/{id}','UserController@updateStatus')->name('users.updateStatus'); //update status user
 
 // Master Application Route [Resource]
 Route::resource('users','UserController');
