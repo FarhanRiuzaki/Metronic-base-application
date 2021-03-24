@@ -1,4 +1,4 @@
-# Metronic 7 + Laravel 8
+# Metronic 7 + Laravel 8 - Base Application For Admin Dashboard
 
 ### Introduction
 
