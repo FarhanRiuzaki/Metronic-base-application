@@ -84,7 +84,7 @@ return [
         ],
         [
             'section'   => 'Management Application',
-            'can'       => ['permission.index','role.index','user.index', 'product.index'],
+            'can'       => ['permission.index','role.index','user.index', 'product.index','audit.index'],
         ],
         [
             'title'     => 'Product',
@@ -93,6 +93,14 @@ return [
             'page'      => 'products',
             'new-tab'   => false,
             'can'       => 'product.index'
+        ],
+        [
+            'title'     => 'Audit Trails',
+            'root'      => true,
+            'icon'      => 'media/svg/icons/Code/Git4.svg', // or can be 'flaticon-home' or any flaticon-*
+            'page'      => 'audits',
+            'new-tab'   => false,
+            'can'       => 'audit.index'
         ],
         [
         'title' => 'Management Apps',

@@ -52,6 +52,7 @@ Route::get('users/update-status/{id}','UserController@updateStatus')->name('user
 Route::resource('users','UserController');
 Route::resource('roles','RoleController');
 Route::resource('permissions','PermissionController');
+Route::resource('audits','AuditTrailController');
 
 // Custom
 Route::resource('products','ProductController');

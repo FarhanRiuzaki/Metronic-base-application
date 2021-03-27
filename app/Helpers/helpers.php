@@ -173,3 +173,26 @@ function ButtonSED($data, $route_type, $permission_type)
 
     return $button;
 }
+
+function eventType($type)
+{
+    $return = "";
+    switch ($type) {
+    case 'created':
+        $return = '<span class="label label-success label-pill label-inline mr-2">'.$type.'</span>';
+        break;
+
+    case 'updated':
+        $return = '<span class="label label-warning label-pill label-inline mr-2">'.$type.'</span>';
+        break;
+
+    case 'deleted':
+        $return = '<span class="label label-danger label-pill label-inline mr-2">'.$type.'</span>';
+        break;
+    default:
+        # code...
+        break;
+    }
+
+    return $return;
+}

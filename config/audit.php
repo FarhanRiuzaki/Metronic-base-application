@@ -25,11 +25,21 @@ return [
     */
 
     'user' => [
+        'primary_key' => 'id',
+        'foreign_key' => 'user_id',
         'morph_prefix' => 'user',
         'guards'       => [
             'web',
             'api',
         ],
+        'model'       => App\Models\User::class,
+    ],
+
+    'product' => [
+        'primary_key'   => 'id',
+        'foreign_key'   => 'auditable_id',
+        // 'morph_prefix'  => 'product',
+        'model'         => App\Models\Product::class,
     ],
 
     /*
@@ -83,7 +93,7 @@ return [
     |
     */
 
-    'timestamps' => false,
+    'timestamps' => true,
 
     /*
     |--------------------------------------------------------------------------
