@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Classes\Theme\Metronic;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
@@ -30,7 +31,7 @@ class AuditTrailController extends Controller
             ->addIndexColumn()
             ->addColumn('created_at', function($data)
             {
-                return $data->created_at->format('Y-m-d H:i:s');
+                return $data->created_at->format('Y-m-d H:i:s') . " [" . Carbon::parse($data->created_at)->diffForHumans() . "] ";
             })
             ->addColumn('user', function($data){
                 if(isset($data->user->name)){
