@@ -37,6 +37,7 @@ class BugController extends Controller
                 return "<p>
                 <span class='bg-light'>".$data->class."</span>
                 <h4 class='text-bold'>".$data->message."</h4>
+                <span class='bg-light'>".$data->url."</span>
                 <br>File: ...".substr($data->file, -35)."
                 <br>Line: ". $data->line."
                 </p>";
@@ -70,5 +71,16 @@ class BugController extends Controller
         $page_breadcrumbs   = [['page'  => 'bugs','title' =>  'Bugs Reporting'], ['page'  => 'bugs/show','title' =>  'Bugs Show']];
 
         return view('master.bug.show', compact('page_title', 'page_description', 'page_breadcrumbs'));
+    }
+
+    public function destroy($id)
+    {
+        $id     = Crypt::decrypt($id);
+        $delete = DB::table('bug_reporting')->delete($id);
+        $delete == true
+            ? $return = ['code' => 'success', 'msg' => 'data deleted successfully']
+            : $return = ['code' => 'error', 'msg' => 'something went wrong!'];
+
+        return response()->json($return);
     }
 }

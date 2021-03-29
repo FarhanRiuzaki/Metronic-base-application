@@ -20,7 +20,7 @@
                             <th>Method</th>
                             {{-- <th>Status Code</th> --}}
                             <th>Message Detail</th>
-                            <th width='105px'>Action</th>
+                            <th width='125px'>Action</th>
                         </tr>
                     </thead>
                     <tbody>

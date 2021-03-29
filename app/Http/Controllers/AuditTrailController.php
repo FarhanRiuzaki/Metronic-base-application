@@ -31,7 +31,7 @@ class AuditTrailController extends Controller
             ->addIndexColumn()
             ->addColumn('created_at', function($data)
             {
-                return $data->created_at->format('Y-m-d H:i:s') . " [" . Carbon::parse($data->created_at)->diffForHumans() . "] ";
+                return "<b>". date('Y-m-d H:i:s', strtotime($data->created_at)) . "</b><br> " . Carbon::parse($data->created_at)->diffForHumans() . " ";
             })
             ->addColumn('user', function($data){
                 if(isset($data->user->name)){
@@ -65,7 +65,7 @@ class AuditTrailController extends Controller
                 }
                 return $button;
             })
-            ->rawColumns(['action','user','record','event'])
+            ->rawColumns(['action','user','record','event','created_at'])
             ->make(true);
         }
 
