@@ -18,11 +18,9 @@
                         <tr class="text-center">
                             <th>Date</th>
                             <th>Method</th>
-                            <th>Status Code</th>
-                            <th>Class</th>
-                            <th>File</th>
-                            <th>User ID</th>
-                            <th width='125px'>Action</th>
+                            {{-- <th>Status Code</th> --}}
+                            <th>Message Detail</th>
+                            <th width='105px'>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,10 +43,8 @@
         columns: [
             {data: 'created_at', name: 'created_at'},
             {data: 'method', name: 'method'},
-            {data: 'code', name: 'code'},
-            {data: 'class', name: 'class'},
+            // {data: 'code', name: 'code'},
             {data: 'file', name: 'file'},
-            {data: 'user_id', name: 'user_id'},
             {
                 data: 'action',
                 name: 'action',
@@ -57,7 +53,7 @@
             },
         ],
         "columnDefs": [
-            { className: "text-center", "targets": [ 6 ] }
+            { className: "text-center", "targets": [ 1,3 ] }
         ],
         "order": [[ 0, "desc" ]]
     }).on( 'draw', function () {

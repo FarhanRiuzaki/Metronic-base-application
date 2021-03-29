@@ -30,11 +30,16 @@ class BugController extends Controller
             ->addIndexColumn()
             ->addColumn('created_at', function($data)
             {
-                return date('Y-m-d H:i:s', strtotime($data->created_at)) . " [" . Carbon::parse($data->created_at)->diffForHumans() . "] ";
+                return "<b>". date('Y-m-d H:i:s', strtotime($data->created_at)) . "</b><br> " . Carbon::parse($data->created_at)->diffForHumans() . " ";
             })
             ->addColumn('file', function($data)
             {
-                return "<p> ...".substr($data->file, -35)."<br>Line: ". $data->line."</p>";
+                return "<p>
+                <span class='bg-light'>".$data->class."</span>
+                <h4 class='text-bold'>".$data->message."</h4>
+                <br>File: ...".substr($data->file, -35)."
+                <br>Line: ". $data->line."
+                </p>";
             })
             ->addColumn('action', function($data){
             $button = ' <a class="btn btn-icon btn-light btn-sm btn-hover-warning" href="'.  route('bugs.show',Crypt::encrypt($data->id)) .'" data-toggle="tooltip"  data-theme="dark" title="Show">
@@ -47,7 +52,7 @@ class BugController extends Controller
                 }
                 return $button;
             })
-            ->rawColumns(['action','file'])
+            ->rawColumns(['action','file','created_at'])
             ->make(true);
         }
 

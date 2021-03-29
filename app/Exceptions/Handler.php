@@ -45,7 +45,7 @@ class Handler extends ExceptionHandler
             if (app()->bound("lern")) {
                 app()->make("lern")->record($e); //Record the Exception to the database
                 // app()->make("lern")->notify($e); //Notify the Exception
-                
+
                 /*
                 OR...
                 // app()->make("lern")->handle($e); //Record and Notify the Exception
