@@ -36,14 +36,16 @@
                     @foreach ($page_breadcrumbs as $k => $item)
                         @php
                         if ($i == $len - 1) {
-                            $class = ' text-primary';
+                            $class  = ' text-primary';
+                            $url    = "#";
                         }else{
-                            $class = ' text-muted';
+                            $class  = ' text-muted';
+                            $url    = url($item['page']);
                         }
                         $i++;
                         @endphp
 						<li class="breadcrumb-item">
-                        	<a href="{{ url($item['page']) }}" class="{{ $class }}">
+                        	<a href="{{ $url }}" class="{{ $class }}">
                             	{{ $item['title'] }}
                         	</a>
 						</li>

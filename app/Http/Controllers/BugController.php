@@ -37,11 +37,11 @@ class BugController extends Controller
                 return "<p> ...".substr($data->file, -35)."<br>Line: ". $data->line."</p>";
             })
             ->addColumn('action', function($data){
-            $button = ' <a class="btn btn-icon btn-light btn-sm btn-hover-warning" href="'.  route('audits.show',Crypt::encrypt($data->id)) .'" data-toggle="tooltip"  data-theme="dark" title="Show">
+            $button = ' <a class="btn btn-icon btn-light btn-sm btn-hover-warning" href="'.  route('bugs.show',Crypt::encrypt($data->id)) .'" data-toggle="tooltip"  data-theme="dark" title="Show">
                 '. Metronic::getSVGController("media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-warning") .'
                 </a>';
                 if(auth()->user()->can('bug.delete')){
-                    $button .= ' <button class="btn btn-icon btn-light btn-sm btn-delete btn-hover-danger" data-remote="'. route('audits.destroy', Crypt::encrypt($data->id)) .'" data-toggle="tooltip"  data-theme="dark" title="Delete">
+                    $button .= ' <button class="btn btn-icon btn-light btn-sm btn-delete btn-hover-danger" data-remote="'. route('bugs.destroy', Crypt::encrypt($data->id)) .'" data-toggle="tooltip"  data-theme="dark" title="Delete">
                         '. Metronic::getSVGController("media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-danger") .'
                     </button>';
                 }
@@ -53,8 +53,17 @@ class BugController extends Controller
 
         $page_title         = $this->page_title;
         $page_description   = $this->page_description;
-        $page_breadcrumbs   = [['page'  => 'audits','title' =>  'Audits']];
+        $page_breadcrumbs   = [['page'  => 'bugs','title' =>  'Bugs Reporting']];
 
         return view('master.bug.index', compact('page_title', 'page_description', 'page_breadcrumbs'));
+    }
+
+    public function show($id)
+    {
+        $page_title         = $this->page_title;
+        $page_description   = $this->page_description;
+        $page_breadcrumbs   = [['page'  => 'bugs','title' =>  'Bugs Reporting'], ['page'  => 'bugs/show','title' =>  'Bugs Show']];
+
+        return view('master.bug.show', compact('page_title', 'page_description', 'page_breadcrumbs'));
     }
 }

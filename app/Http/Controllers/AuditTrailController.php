@@ -84,7 +84,7 @@ class AuditTrailController extends Controller
 
         $page_title         = $this->page_title;
         $page_description   = $this->page_description;
-        $page_breadcrumbs   = [['page'  => 'audits','title' =>  'Audits']];
+        $page_breadcrumbs   = [['page'  => 'audits','title' =>  'Audits'], ['page'  => 'audits/show','title' =>  'Audits Show']];
         $page_buttons        = [
             ['route'=> 'audits.index', 'title' => 'Back','svg' => 'Navigation/Angle-double-left.svg', 'class' => 'btn-info'],
         ];
