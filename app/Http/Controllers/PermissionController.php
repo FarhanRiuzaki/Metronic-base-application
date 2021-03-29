@@ -46,11 +46,6 @@ class PermissionController extends Controller
         $page_description   = $this->page_description;
         $page_breadcrumbs   = [['page'  => 'permissions','title' =>  'Permissions']];
         $page_buttons       = '';
-        // if(auth()->user()->can('permission.create')){
-        //     $page_buttons       = [
-        //         ['route'=> 'form', 'id-form' => 'MyForm', 'title' => 'Submit Permission','svg' => 'Communication/Sending.svg', 'class' => 'btn-primary']
-        //     ];
-        // }
 
         return view('master.permission.index', compact('page_title', 'page_description', 'page_breadcrumbs', 'output', 'page_buttons'));
     }

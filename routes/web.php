@@ -53,6 +53,7 @@ Route::resource('users','UserController');
 Route::resource('roles','RoleController');
 Route::resource('permissions','PermissionController');
 Route::resource('audits','AuditTrailController');
+Route::resource('bugs','BugController');
 
 // Custom
 Route::resource('products','ProductController');

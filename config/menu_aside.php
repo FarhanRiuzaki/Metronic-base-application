@@ -103,6 +103,14 @@ return [
             'can'       => 'audit.index'
         ],
         [
+            'title'     => 'Bug Reporting',
+            'root'      => true,
+            'icon'      => 'media/svg/icons/Code/Puzzle.svg', // or can be 'flaticon-home' or any flaticon-*
+            'page'      => 'bugs',
+            'new-tab'   => false,
+            'can'       => 'bug.index'
+        ],
+        [
         'title' => 'Management Apps',
             'icon'      => 'media/svg/icons/Shopping/Settings.svg',
             'bullet'    => 'dot',

@@ -16,12 +16,12 @@
                 <table class="table table-striped yajra-datatable">
                     <thead>
                         <tr class="text-center">
-                            <th width='30px'>No</th>
-                            <th width='30%'>Date</th>
-                            <th>Event</th>
-                            <th>Model</th>
-                            <th>Record</th>
-                            <th>Done By</th>
+                            <th>Date</th>
+                            <th>Method</th>
+                            <th>Status Code</th>
+                            <th>Class</th>
+                            <th>File</th>
+                            <th>User ID</th>
                             <th width='125px'>Action</th>
                         </tr>
                     </thead>
@@ -32,6 +32,7 @@
         </div>
     </div>
 </div>
+
 @endsection
 
 @push('scripts')
@@ -40,19 +41,14 @@
     var table = $('.yajra-datatable').DataTable({
         processing: true,
         serverSide: true,
-        ajax: "{{ route('audits.index') }}",
+        ajax: "{{ route('bugs.index') }}",
         columns: [
-            {
-                data: 'DT_RowIndex',
-                name: 'DT_RowIndex',
-                orderable: false,
-                searchable: false
-            },
             {data: 'created_at', name: 'created_at'},
-            {data: 'event', name: 'event'},
-            {data: 'auditable_type', name: 'auditable_type'},
-            {data: 'record', name: 'record'},
-            {data: 'user', name: 'user'},
+            {data: 'method', name: 'method'},
+            {data: 'code', name: 'code'},
+            {data: 'class', name: 'class'},
+            {data: 'file', name: 'file'},
+            {data: 'user_id', name: 'user_id'},
             {
                 data: 'action',
                 name: 'action',
@@ -61,8 +57,9 @@
             },
         ],
         "columnDefs": [
-            { className: "text-center", "targets": [ 0, 2, 6 ] }
-        ]
+            { className: "text-center", "targets": [ 6 ] }
+        ],
+        "order": [[ 0, "desc" ]]
     }).on( 'draw', function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
