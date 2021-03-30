@@ -6,7 +6,6 @@ use App\Classes\Theme\Metronic;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
-use Illuminate\Support\Facades\DB;
 use OwenIt\Auditing\Models\Audit;
 use Yajra\DataTables\DataTables;
 
