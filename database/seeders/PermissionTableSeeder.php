@@ -33,6 +33,10 @@ class PermissionTableSeeder extends Seeder
             'product.create',
             'product.edit',
             'product.delete',
+            'bug.index',
+            'bug.delete',
+            'audit.index',
+            'audit.delete',
             'api.uploadMedia'
             ];
         foreach ($permissions as $permission) {
