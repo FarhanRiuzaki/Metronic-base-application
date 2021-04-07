@@ -38,8 +38,8 @@ class AppServiceProvider extends ServiceProvider
             'class',            // 4
             'attributes' => []  // 5
         ]);
-        Form::component('inputText', 'layout.component.form.text', ['label', 'name', 'value' => null, 'class',  'attributes' => []]);
-        Form::component('inputTextarea', 'layout.component.form.textarea', ['label', 'name', 'value' => null, 'class',  'attributes' => []]);
-        Form::component('inputPassword', 'layout.component.form.password', ['label', 'name', 'value' => null, 'class',  'attributes' => []]);
+        Form::component('inputText',        'layout.component.form.text',       ['label', 'name', 'value' => null, 'class',  'attributes' => []]);
+        Form::component('inputTextarea',    'layout.component.form.textarea',   ['label', 'name', 'value' => null, 'class',  'attributes' => []]);
+        Form::component('inputPassword',    'layout.component.form.password',   ['label', 'name', 'value' => null, 'class',  'attributes' => []]);
     }
 }
