@@ -24,7 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         // DEFINE FORM
         // array 1 : label
         // array 2 : nama & id
