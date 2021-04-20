@@ -138,8 +138,12 @@ RESTFUL API >> For next implementaion
                                                         >> https://github.com/DarkaOnLine/L5-Swagger
 
 NOTE:
+
+--------------------- ISSUE PERTAMA ---------------------
+
 untuk dapat menjalankan auto create permission saat melakukan artisan make:controller,
 cari kata kunci "ArgvInput" dan paste kan kode ini:
+
 Before:
     /**
      * {@inheritdoc}
@@ -155,3 +159,5 @@ After:
         // otomatisasi permission jika jenisnya resource by farhan
         savePermission($this->tokens); //tambahkan helper ini
 done
+
+--------------------- ISSUE PERTAMA ---------------------
