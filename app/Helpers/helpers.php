@@ -3,7 +3,10 @@
 // WElcome
 
 use App\Classes\Theme\Metronic;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Crypt;
+use Spatie\Permission\Models\Permission;
+use Illuminate\Support\Str;
 
 function welcome_word() {
 
@@ -206,23 +209,26 @@ function createdAt($created)
 function savePermission($argv)
 {
     // dd($argv);
-    $type = explode('\\', $argv[1]);
-    $type = end($type);
-    $type = str_replace('Master', '', $type);
-    $type = str_replace('Controller', '', $type);
-    $type = Str::snake($type);
-    $type = Str::lower($type);
-    // if(isset($argv[3])){
-    //     if($argv[3] == '-r'){
-            $permissions = [
-                 $type . '.index',
-                 $type . '.create',
-                 $type . '.edit',
-                 $type . '.delete',
-            ];
-            foreach ($permissions as $permission) {
-                Permission::findOrCreate($permission);
-            }
-    //     }
-    // }
+    if($argv[0] == 'make:controller'){
+        $type = explode('\\', $argv[1]);
+        $type = end($type);
+        $type = str_replace('Master', '', $type);
+        $type = str_replace('Controller', '', $type);
+        $type = Str::of($type)->kebab();
+        $type = Str::lower($type);
+        // dd($type);
+        // if(isset($argv[3])){
+        //     if($argv[3] == '-r'){
+                $permissions = [
+                    $type . '.index',
+                    $type . '.create',
+                    $type . '.edit',
+                    $type . '.delete',
+                ];
+                foreach ($permissions as $permission) {
+                    Permission::findOrCreate($permission);
+                }
+        //     }
+        // }
+    }
 }
