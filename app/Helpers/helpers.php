@@ -196,3 +196,33 @@ function eventType($type)
 
     return $return;
 }
+
+function createdAt($created)
+{
+    return "<b>". date('Y-m-d H:i:s', strtotime($created)) . "</b><br> " . Carbon::parse($created)->diffForHumans() . " ";
+}
+
+//function SAVE Permission
+function savePermission($argv)
+{
+    // dd($argv);
+    $type = explode('\\', $argv[1]);
+    $type = end($type);
+    $type = str_replace('Master', '', $type);
+    $type = str_replace('Controller', '', $type);
+    $type = Str::snake($type);
+    $type = Str::lower($type);
+    // if(isset($argv[3])){
+    //     if($argv[3] == '-r'){
+            $permissions = [
+                 $type . '.index',
+                 $type . '.create',
+                 $type . '.edit',
+                 $type . '.delete',
+            ];
+            foreach ($permissions as $permission) {
+                Permission::findOrCreate($permission);
+            }
+    //     }
+    // }
+}

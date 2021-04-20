@@ -136,3 +136,22 @@ CONFIG HELPER       >> https://ilmucoding.com/laravel-7-custom-helper/
 RESTFUL API >> For next implementaion
     +- Swagger + Pasport (doc API & Auth Token API)     >> https://dev.to/avsecdongol/laravel-api-documentation-with-swagger-and-passport-3ec0
                                                         >> https://github.com/DarkaOnLine/L5-Swagger
+
+NOTE:
+untuk dapat menjalankan auto create permission saat melakukan artisan make:controller,
+cari kata kunci "ArgvInput" dan paste kan kode ini:
+Before:
+    /**
+     * {@inheritdoc}
+     */
+    protected function parse()
+    {
+After:
+    /**
+     * {@inheritdoc}
+     */
+    protected function parse()
+    {
+        // otomatisasi permission jika jenisnya resource by farhan
+        savePermission($this->tokens); //tambahkan helper ini
+done
