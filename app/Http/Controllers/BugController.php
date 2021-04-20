@@ -43,7 +43,7 @@ class BugController extends Controller
                 </p>";
             })
             ->addColumn('action', function($data){
-            $button = ' <a class="btn btn-icon btn-light btn-sm btn-hover-warning" href="'.  route('bugs.show',Crypt::encrypt($data->id)) .'" data-toggle="tooltip"  data-theme="dark" title="Show">
+                $button = ' <a class="btn btn-icon btn-light btn-sm btn-hover-warning" href="'.  route('bugs.show',Crypt::encrypt($data->id)) .'" data-toggle="tooltip"  data-theme="dark" title="Show">
                 '. Metronic::getSVGController("media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-warning") .'
                 </a>';
                 if(auth()->user()->can('bug.delete')){
